@@ -19,3 +19,512 @@ Migrating to CreateUserMovies (20141219092825)
   [1m[35mSQL (0.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141219092825')
   [1m[36m (29.5ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-19 10:35:49 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 21ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-19 10:38:41 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1552ms (Views: 1549.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:38:43 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-19 10:38:43 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:38:43 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-19 10:38:43 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-19 10:38:43 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-19 10:38:43 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-19 10:38:43 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-19 10:38:43 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:38:43 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:38:43 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-19 10:38:43 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-19 10:38:43 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-19 10:39:21 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (28.1ms)
+  Rendered users/new.html.erb within layouts/application (32.7ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined method `timestamp' for #<User:0x00000003c6a018>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :timestamp %><br>
+    24:     <%= f.text_field :timestamp %>
+    25:   </div>
+    26:   <div class="actions">
+    27:     <%= f.submit %>
+  app/views/users/_form.html.erb:24:in `block in _app_views_users__form_html_erb__630439494883013087_31250220'
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__630439494883013087_31250220'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3048667104863964390_31662320'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-19 10:39:21 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (5.0ms)
+  Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `timestamp' for #<User:0x007f2418302058>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :timestamp %><br>
+    24:     <%= f.text_field :timestamp %>
+    25:   </div>
+    26:   <div class="actions">
+    27:     <%= f.submit %>
+  app/views/users/_form.html.erb:24:in `block in _app_views_users__form_html_erb__630439494883013087_69896500635260'
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__630439494883013087_69896500635260'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3048667104863964390_69896500665700'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-19 10:41:35 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 100ms (Views: 98.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:41:35 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:41:35 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-19 10:41:35 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:41:35 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:41:35 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-19 10:41:56 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.6ms)
+  Rendered users/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `timestamp' for #<User:0x000000042e64a0>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :timestamp %><br>
+    24:     <%= f.text_field :timestamp %>
+    25:   </div>
+    26:   <div class="actions">
+    27:     <%= f.submit %>
+  app/views/users/_form.html.erb:24:in `block in _app_views_users__form_html_erb__630439494883013087_69896500635260'
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__630439494883013087_69896500635260'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb___3048667104863964390_69896500665700'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-19 10:43:52 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.3ms)
+  Rendered users/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 102ms (Views: 101.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:43:52 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-19 10:43:52 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-19 10:43:52 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-19 10:43:52 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:43:52 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-19 10:43:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-19 10:43:52 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-19 10:43:52 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:43:52 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:43:52 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-19 10:43:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-19 10:43:52 +0100
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-19 10:44:04 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gCHCFkTP9GaPrI0H69M8RUH+0Na1XUf2cY5R3bDkVrQ=", "user"=>{"login"=>"vanille", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (42.7ms)[0m  [1mINSERT INTO `users` (`created_at`, `login`, `password`, `updated_at`) VALUES ('2014-12-19 09:44:04', 'vanille', 'tutu', '2014-12-19 09:44:04')[0m
+  [1m[35m (119.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 169ms (ActiveRecord: 162.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-12-19 10:44:04 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `timestamp' for #<User:0x000000050aa1b8>):
+    12: 
+    13: <p>
+    14:   <strong>Timestamp:</strong>
+    15:   <%= @user.timestamp %>
+    16: </p>
+    17: 
+    18: <%= link_to 'Edit', edit_user_path(@user) %> |
+  app/views/users/show.html.erb:15:in `_app_views_users_show_html_erb__654255255014500493_42287400'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-12-19 10:44:19 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 97ms (Views: 94.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:19 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:19 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:19 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:19 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:19 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:19 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:19 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:19 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:19 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:19 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:19 +0100
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2014-12-19 10:44:22 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered users/_form.html.erb (4.8ms)
+  Rendered users/edit.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 93ms (Views: 89.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2014-12-19 10:44:32 +0100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gCHCFkTP9GaPrI0H69M8RUH+0Na1XUf2cY5R3bDkVrQ=", "user"=>{"login"=>"vanille", "password"=>"[FILTERED]"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (97.5ms)[0m  UPDATE `users` SET `password` = 'tuto', `updated_at` = '2014-12-19 09:44:32' WHERE `users`.`id` = 1
+  [1m[36m (86.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 193ms (ActiveRecord: 184.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-12-19 10:44:32 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 102ms (Views: 99.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:32 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:32 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:32 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:32 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:32 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:32 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:33 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:33 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:33 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:33 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:33 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:33 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-19 10:44:37 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `timestamp' for #<User:0x0000000565a310>):
+    15:       <tr>
+    16:         <td><%= user.login %></td>
+    17:         <td><%= user.password %></td>
+    18:         <td><%= user.timestamp %></td>
+    19:         <td><%= link_to 'Show', user %></td>
+    20:         <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    21:         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  app/views/users/index.html.erb:18:in `block in _app_views_users_index_html_erb___1898859649603179170_41911840'
+  app/views/users/index.html.erb:14:in `_app_views_users_index_html_erb___1898859649603179170_41911840'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-19 10:44:52 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users`
+  Rendered users/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 90ms (Views: 89.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:52 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:52 +0100
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:52 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:52 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:52 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-19 10:44:52 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:52 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:52 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:52 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-19 10:44:52 +0100
+
+
+Started DELETE "/users/1" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gCHCFkTP9GaPrI0H69M8RUH+0Na1XUf2cY5R3bDkVrQ=", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (14.7ms)[0m  [1mDELETE FROM `users` WHERE `users`.`id` = 1[0m
+  [1m[35m (52.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/users
+Completed 302 Found in 74ms (ActiveRecord: 68.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 105ms (Views: 103.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:03 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-12-19 10:45:05 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 92ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-19 10:45:10 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gCHCFkTP9GaPrI0H69M8RUH+0Na1XUf2cY5R3bDkVrQ=", "user"=>{"login"=>"vanille", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (21.4ms)[0m  [1mINSERT INTO `users` (`created_at`, `login`, `password`, `updated_at`) VALUES ('2014-12-19 09:45:10', 'vanille', 'tuto', '2014-12-19 09:45:10')[0m
+  [1m[35m (95.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 126ms (ActiveRecord: 117.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-12-19 10:45:11 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 94ms (Views: 89.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:45:11 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-19 10:45:11 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:11 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-19 10:45:11 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-19 10:45:11 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-19 10:45:11 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:11 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:11 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:11 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:11 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:11 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-19 10:45:11 +0100
