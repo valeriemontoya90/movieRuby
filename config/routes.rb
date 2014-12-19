@@ -1,10 +1,18 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :user_movies
-
   resources :movies
 
   get '/' => 'movies#index'
+
+  #get "home/index"
+  #get "search/index"
+  #get "controller#action"
+  #match 'search' => "search#index"
+
+  get "search/" => "movies#search"
+
+  root :to => 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
