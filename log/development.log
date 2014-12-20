@@ -6046,3 +6046,1584 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-19 17:56:16 +0100
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-19 17:56:16 +0100
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-20 15:08:01 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::SessionsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 167ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-20 15:08:02 +0100
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.erb within layouts/application (5.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 302ms (Views: 300.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:08:02 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:08:02 +0100
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:08:02 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:08:02 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:08:02 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:08:02 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:08:02 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:08:02 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:08:02 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:08:02 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:08:02 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:08:02 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=&commit=search" for 127.0.0.1 at 2014-12-20 15:08:06 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (45.4ms)
+Completed 500 Internal Server Error in 324ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:       <td><%= @movie[0].id %></td>
+    14:       <td><%= @movie[0].title %></td>
+    15:       <!--<td><%= @movie %></td>
+    16:       <% @movie.each do |mov| %>-->
+  app/views/movies/search.html.erb:13:in `_app_views_movies_search_html_erb__773836815481942140_48149380'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:08:15 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 278ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:       <td><%= @movie[0].id %></td>
+    14:       <td><%= @movie[0].title %></td>
+    15:       <!--<td><%= @movie %></td>
+    16:       <% @movie.each do |mov| %>-->
+  app/views/movies/search.html.erb:13:in `_app_views_movies_search_html_erb__773836815481942140_48149380'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.3ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:08:55 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 267ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:       <td><%= @movie.id %></td>
+    14:       <td><%= @movie.title %></td>
+    15:       <!--<td><%= @movie %></td>
+    16:       <% @movie.each do |mov| %>-->
+  app/views/movies/search.html.erb:13:in `_app_views_movies_search_html_erb__773836815481942140_46039580'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.3ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:09:32 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 402ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:       <td><%= @movie.id %></td>
+    14:       <td><%= @movie.title %></td>
+    15:       <!--<td><%= @movie %></td>
+    16:       <% @movie.each do |mov| %>-->
+  app/views/movies/search.html.erb:13:in `_app_views_movies_search_html_erb__773836815481942140_46039580'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-20 15:09:34 +0100
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.erb within layouts/application (1.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 92ms (Views: 91.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:09:35 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:09:35 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:09:35 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:09:35 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:09:35 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:09:35 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:09:35 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:09:35 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:09:35 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:09:35 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:09:35 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:09:35 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&id=hunger+game&commit=search" for 127.0.0.1 at 2014-12-20 15:09:37 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "id"=>"hunger game", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 245ms
+
+ActionView::Template::Error (undefined method `id' for []:Array):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:       <td><%= @movie.id %></td>
+    14:       <td><%= @movie.title %></td>
+    15:       <!--<td><%= @movie %></td>
+    16:       <% @movie.each do |mov| %>-->
+  app/views/movies/search.html.erb:13:in `_app_views_movies_search_html_erb__773836815481942140_46039580'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.2ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&id=hunger+game&commit=search" for 127.0.0.1 at 2014-12-20 15:09:49 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "id"=>"hunger game", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 260ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:       <td><%= @movie[0].id %></td>
+    14:       <td><%= @movie[0].title %></td>
+    15:       <!--<td><%= @movie %></td>
+    16:       <% @movie.each do |mov| %>-->
+  app/views/movies/search.html.erb:13:in `_app_views_movies_search_html_erb__773836815481942140_37957040'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (35.5ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.6ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&id=hunger+game&commit=search" for 127.0.0.1 at 2014-12-20 15:10:01 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "id"=>"hunger game", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 296ms
+
+ActionView::Template::Error (undefined method `id' for []:Array):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:       <td><%= @movie.id %></td>
+    14:       <td><%= @movie.title %></td>
+    15:       <!--<td><%= @movie %></td>
+    16:       <% @movie.each do |mov| %>-->
+  app/views/movies/search.html.erb:13:in `_app_views_movies_search_html_erb__773836815481942140_53361160'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.3ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&id=hunger+game&commit=search" for 127.0.0.1 at 2014-12-20 15:10:27 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "id"=>"hunger game", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 264ms
+
+ActionView::Template::Error (undefined method `id' for []:Array):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:       <td><%= @movie.id %></td>
+    14:       <td><%= @movie.title %></td>
+    15:       <!--<td><%= @movie %></td>
+    16:       <% @movie.each do |mov| %>-->
+  app/views/movies/search.html.erb:13:in `_app_views_movies_search_html_erb__773836815481942140_53361160'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.7ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&id=hunger+game&commit=search" for 127.0.0.1 at 2014-12-20 15:11:36 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "id"=>"hunger game", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 430ms
+
+ActionView::Template::Error (undefined method `id' for []:Array):
+    10:   </thead>
+    11: 
+    12:   <tbody>
+    13:       <td><%= @movie.id %></td>
+    14:       <td><%= @movie.title %></td>
+    15:       <!--<td><%= @movie %></td>
+    16:       <% @movie.each do |mov| %>-->
+  app/views/movies/search.html.erb:13:in `_app_views_movies_search_html_erb__773836815481942140_53361160'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.5ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&id=hunger+game&commit=search" for 127.0.0.1 at 2014-12-20 15:12:47 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "id"=>"hunger game", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 285ms
+
+ActionView::Template::Error (undefined method `id' for []:Array):
+    11: 
+    12:   <tbody>
+    13:       <td><%= @movie %></td>
+    14:       <!--<td><%= @movie.id %></td>
+    15:       <td><%= @movie.title %></td>
+    16:       <td><%= @movie %></td>
+    17:       <% @movie.each do |mov| %>-->
+  app/views/movies/search.html.erb:14:in `_app_views_movies_search_html_erb__773836815481942140_35171200'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.8ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&id=hunger+game&commit=search" for 127.0.0.1 at 2014-12-20 15:13:32 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "id"=>"hunger game", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 363ms (Views: 109.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:13:33 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:13:33 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:13:33 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:13:33 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:13:33 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:13:33 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:13:33 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:13:33 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:13:33 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:13:33 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:13:33 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:13:33 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-20 15:14:23 +0100
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 97ms (Views: 96.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:14:23 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:14:23 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:14:23 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:14:23 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:14:23 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:23 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:23 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:23 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:23 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:23 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:23 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&id=Fight+Club&commit=search" for 127.0.0.1 at 2014-12-20 15:14:25 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "id"=>"Fight Club", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (5.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 332ms (Views: 97.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:14:26 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:14:26 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:14:26 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:14:26 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:14:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:26 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:26 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:26 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:14:26 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&id=Fight+Club&commit=search" for 127.0.0.1 at 2014-12-20 15:17:59 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "id"=>"Fight Club", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 278ms
+
+SyntaxError (/home/valerie/workspace/dev/Ruby/movieRuby/app/views/movies/search.html.erb:15: syntax error, unexpected keyword_end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                               ^
+/home/valerie/workspace/dev/Ruby/movieRuby/app/views/movies/search.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+/home/valerie/workspace/dev/Ruby/movieRuby/app/views/movies/search.html.erb:22: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/movies/search.html.erb:15: syntax error, unexpected keyword_end
+  app/views/movies/search.html.erb:20: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/movies/search.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&id=Fight+Club&commit=search" for 127.0.0.1 at 2014-12-20 15:18:29 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "id"=>"Fight Club", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (4.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 361ms (Views: 99.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:18:29 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:18:29 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:18:29 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:18:29 +0100
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:18:29 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:18:29 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:18:29 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:18:29 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:18:29 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:18:29 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:18:29 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:18:29 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&id=Fight+Club&commit=search" for 127.0.0.1 at 2014-12-20 15:19:25 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "id"=>"Fight Club", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (7.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 396ms (Views: 111.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:19:26 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:19:26 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:19:26 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:19:26 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:19:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:19:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:19:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:19:26 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:19:26 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:19:26 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:19:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:19:26 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&id=Fight+Club&commit=search" for 127.0.0.1 at 2014-12-20 15:23:16 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "id"=>"Fight Club", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 288ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Listing Movie</h1>
+    2: 
+    3: <%= @movie.each do |mov| %>
+    4: <p><%= mov %></p>
+    5: <% end %>
+  app/views/movies/search.html.erb:3:in `_app_views_movies_search_html_erb__773836815481942140_37899720'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-20 15:23:21 +0100
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 118ms (Views: 114.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:21 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:21 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:21 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:21 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:21 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:21 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:21 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:21 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:21 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:21 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:21 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:21 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-20 15:23:24 +0100
+Processing by MoviesController#index as HTML
+  Rendered movies/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 98ms (Views: 96.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:25 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:25 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:25 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:25 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:25 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:25 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:25 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:25 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:25 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:25 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:25 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:25 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:23:28 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (6.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 353ms (Views: 95.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:28 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:28 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:28 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:28 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:23:28 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:28 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:28 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:28 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:28 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:28 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:23:28 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:25:10 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 390ms (Views: 106.8ms | ActiveRecord: 41.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:11 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:11 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:11 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:11 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:11 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:11 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:11 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:11 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:11 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:11 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:11 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:11 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:25:12 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (3.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 353ms (Views: 100.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:12 +0100
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:12 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:12 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:12 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:13 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:13 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:13 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:13 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:13 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:13 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:13 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:25:13 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 362ms (Views: 105.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:14 +0100
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:14 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:14 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:14 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:14 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:14 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:14 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:14 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:14 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:14 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:14 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:14 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:25:15 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (3.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 336ms (Views: 95.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:15 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:15 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:15 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:15 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:15 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:15 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:15 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:15 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:15 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:15 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:15 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:15 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:25:16 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 328ms (Views: 96.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:17 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:17 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:17 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:17 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:17 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:17 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:17 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:17 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:17 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:17 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:17 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:17 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:25:18 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (7.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 349ms (Views: 110.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:18 +0100
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:18 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:18 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:18 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:25:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:18 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:18 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:18 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:18 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:25:18 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:29:54 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (7.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 395ms (Views: 119.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:29:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:29:55 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:29:55 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:29:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:29:55 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:29:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:29:55 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:29:55 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:29:55 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:29:55 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:29:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:29:55 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:31:55 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/valerie/workspace/dev/Ruby/movieRuby/app/models/movie.rb:13: syntax error, unexpected ':', expecting '}'
+...mat.json { render json: status: :created, location: @movie }
+...                               ^):
+  app/models/movie.rb:13: syntax error, unexpected ':', expecting '}'
+  app/controllers/movies_controller.rb:8:in `search'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.6ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:34:39 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+Completed 500 Internal Server Error in 283ms
+
+NameError (undefined local variable or method `movie' for #<MoviesController:0x00000006157f60>):
+  app/controllers/movies_controller.rb:9:in `search'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.7ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:34:48 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (6.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 363ms (Views: 115.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:34:48 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:34:48 +0100
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:34:48 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:34:48 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:34:48 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:34:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:34:48 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:34:48 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:34:48 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:34:48 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:34:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:34:48 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:35:20 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+Completed 500 Internal Server Error in 293ms
+
+NameError (undefined local variable or method `movie' for #<MoviesController:0x0000000482d008>):
+  app/controllers/movies_controller.rb:9:in `search'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.3ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:35:36 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+Completed 500 Internal Server Error in 265ms
+
+TypeError (no implicit conversion of Array into String):
+  app/controllers/movies_controller.rb:9:in `search'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.4ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:37:25 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (9.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 380ms (Views: 125.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:37:26 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:37:26 +0100
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:37:26 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:37:26 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:37:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:37:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:37:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:37:26 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:37:26 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:37:26 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:37:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:37:26 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:45:36 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+Completed 500 Internal Server Error in 532ms
+
+TypeError (no implicit conversion of Array into String):
+  app/controllers/movies_controller.rb:14:in `initialize'
+  app/controllers/movies_controller.rb:14:in `new'
+  app/controllers/movies_controller.rb:14:in `search'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:45:53 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+Completed 500 Internal Server Error in 247ms
+
+TypeError (no implicit conversion of Array into String):
+  app/controllers/movies_controller.rb:9:in `search'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:47:58 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+Completed 500 Internal Server Error in 270ms
+
+NoMethodError (undefined method `each' for "Hashugar":String):
+  app/controllers/movies_controller.rb:10:in `search'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.7ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:48:18 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+Completed 500 Internal Server Error in 430ms
+
+NoMethodError (undefined method `each' for #<String:0x000000069c5148>):
+  app/controllers/movies_controller.rb:10:in `search'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:48:33 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (7.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 443ms (Views: 195.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:48:33 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:48:33 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:48:33 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:48:33 +0100
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:48:33 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:48:33 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:48:33 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:48:33 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:48:33 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:48:33 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:48:33 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:48:33 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:49:36 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 277ms
+
+ActionView::Template::Error (undefined method `each' for #<String:0x00000004d17410>):
+    1: <h1>Listing Movie</h1>
+    2: 
+    3: <%= @parsed.each do |mov| %>
+    4: <p><%= mov %></p>
+    5: <% end %>
+  app/views/movies/search.html.erb:3:in `_app_views_movies_search_html_erb___205948447784642270_40404780'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.4ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:50:00 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 382ms (Views: 112.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:50:00 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:50:00 +0100
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:50:00 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:50:01 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:50:01 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:50:01 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:50:01 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:50:01 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:50:01 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:50:01 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:50:01 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:50:01 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:51:52 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+Completed 500 Internal Server Error in 265ms
+
+NameError (undefined local variable or method `json' for #<MoviesController:0x00000006d2bf08>):
+  app/controllers/movies_controller.rb:10:in `search'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.2ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:53:31 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+Completed 500 Internal Server Error in 270ms
+
+NameError (undefined local variable or method `json' for #<MoviesController:0x000000068fdfd0>):
+  app/controllers/movies_controller.rb:10:in `search'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.1ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:55:35 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 281ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Listing Movie</h1>
+    2: 
+    3: <%= @parsed.each do |mov| %>
+    4: <p><%= mov.id %></p>
+    5: <% end %>
+  app/views/movies/search.html.erb:3:in `_app_views_movies_search_html_erb___205948447784642270_51382640'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.4ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:56:13 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (7.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 398ms (Views: 130.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:56:14 +0100
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:56:14 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:56:14 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:14 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:56:14 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:56:14 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:14 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:14 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:14 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:14 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:14 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:14 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:56:34 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (6.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 370ms (Views: 133.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:56:34 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:34 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:56:34 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:56:34 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:56:34 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:56:34 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:34 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:34 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:34 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:34 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:34 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:56:34 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:57:07 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (8.7ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 382ms (Views: 134.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:57:07 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:57:07 +0100
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:57:07 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:57:07 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:57:07 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:57:07 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:57:07 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:57:07 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:57:07 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:57:07 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:57:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:57:07 +0100
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:58:39 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 288ms
+
+ActionView::Template::Error (undefined local variable or method `new_user_path' for #<#<Class:0x0000000622e0d8>:0x0000000689eb70>):
+    20: 
+    21: <br>
+    22: 
+    23: <%= link_to 'New User', new_user_path %>
+  app/views/movies/search.html.erb:23:in `_app_views_movies_search_html_erb___205948447784642270_54848040'
+
+
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/valerie/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.6ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&q=batman&commit=search" for 127.0.0.1 at 2014-12-20 15:58:46 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"batman", "commit"=>"search"}
+  Rendered movies/search.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 335ms (Views: 97.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:58:46 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-20 15:58:46 +0100
+
+
+Started GET "/assets/user_movies.css?body=1" for 127.0.0.1 at 2014-12-20 15:58:46 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-20 15:58:46 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-20 15:58:46 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-20 15:58:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-20 15:58:46 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-20 15:58:46 +0100
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:58:46 +0100
+
+
+Started GET "/assets/user_movies.js?body=1" for 127.0.0.1 at 2014-12-20 15:58:46 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-20 15:58:46 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-20 15:58:46 +0100

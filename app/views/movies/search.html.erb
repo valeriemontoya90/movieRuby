@@ -1,0 +1,21 @@
+<h1>Listing Movie</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>title</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @movie.each do |mov| %>
+      <tr>
+        <td><%= mov.id %></td>
+        <td><%= mov.title %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

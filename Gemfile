@@ -30,6 +30,10 @@ gem 'devise'
 
 gem 'themoviedb'
 
+gem 'json'
+
+gem 'yajl-ruby'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

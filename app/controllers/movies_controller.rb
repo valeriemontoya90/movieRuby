@@ -6,7 +6,6 @@ class MoviesController < ApplicationController
   def search
     #@movies = Movie.all
     @movie = Movie.search(params[:q])
-    puts @movie
   end
 
   # GET /movies/1

@@ -5,10 +5,10 @@ class Movie < ActiveRecord::Base
 	end
 
 	def self.search(query)
-		@search = Tmdb::Search.new
-		@search.resource('movie') # determines type of resource
-		@search.query(query) # the query to search against
-		@search.fetch # makes request
+		@movie = Tmdb::Search.new
+		@movie.resource('movie') # determines type of resource
+		@movie.query(query) # the query to search against
+		@movie.fetch # makes request
 	end
 
 	def self.show
