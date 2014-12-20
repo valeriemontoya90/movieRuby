@@ -6,6 +6,7 @@ class MoviesController < ApplicationController
   def search
     #@movies = Movie.all
     @movie = Movie.search(params[:q])
+    @configuration = Tmdb::Configuration.new
   end
 
   # GET /movies/1

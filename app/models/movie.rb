@@ -11,9 +11,9 @@ class Movie < ActiveRecord::Base
 		@movie.fetch # makes request
 	end
 
-	def self.show
+	def self.show(query)
 		@movie = Tmdb::Movie.detail(params[:id])
-	  	@images = Tmdb::Movie.images(params[:id])
+	  	@images = Tmdb::Movie.images(query)
 	  	@cast = Tmdb::Movie.casts(params[:id])
 	  	@trailers = Tmdb::Movie.trailers(params[:id])
 	  	@similar_movies = Tmdb::Movie.similar_movies(params[:id])
